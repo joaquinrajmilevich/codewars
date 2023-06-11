@@ -16,4 +16,8 @@ function toCamelCase(str) {
 // console.log(toCamelCase("A-B-C"));
 
 const disemvowel = (str) => str.replace(/[aeiou]/gi, "");
-console.log(disemvowel("This website is for losers LOL!"));
+// console.log(disemvowel("This website is for losers LOL!"));
+
+const maskify = (cc) => cc.slice(0, -4).replace(/\w/g, "#") + cc.slice(-4);
+
+// console.log(maskify("4556364607935616"));
