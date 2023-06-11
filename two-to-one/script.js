@@ -13,4 +13,7 @@ function toCamelCase(str) {
   }
   return arr.join("");
 }
-console.log(toCamelCase("A-B-C"));
+// console.log(toCamelCase("A-B-C"));
+
+const disemvowel = (str) => str.replace(/[aeiou]/gi, "");
+console.log(disemvowel("This website is for losers LOL!"));
